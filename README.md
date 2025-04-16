@@ -1,2 +1,2 @@
 # js-youtube
-A code repo for javascript
+Learning backend by making a project
