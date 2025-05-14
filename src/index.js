@@ -1,12 +1,16 @@
 //require('dotenv').config({path: './env'})
+import { app } from "./app.js"; 
 import dotenv from "dotenv"
 import connectDB from "./db/index.js";
+import express from 'express';
+//const app = express();
 
 dotenv.config({
-    path: './env'
-})
+    path: './.env'
+});
+console.log("Cloudinary name:", process.env.CLOUDINARY_CLOUD_NAME);
 
-
+const PORT = process.env.PORT || 8000;
 
 connectDB()
 .then( () => {
